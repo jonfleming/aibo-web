@@ -1,17 +1,31 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <aiboimage/>
+    <aiboaction/>
+    <aibotarget/>
+    <aiboresponse/>
+    <aibolog/>
+    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import aiboimage from '@/components/aiboimage.vue';
+import aiboaction from '@/components/aiboaction.vue';
+import aibotarget from '@/components/aibotarget.vue';
+import aiboresponse from '@/components/aiboresponse.vue';
+import aibolog from '@/components/aibolog.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
-}
+    aiboimage,
+    aiboaction,
+    aibotarget,
+    aiboresponse,
+    aibolog,
+  },
+};
 </script>
 
 <style>
