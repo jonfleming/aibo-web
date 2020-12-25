@@ -1,5 +1,7 @@
 <template>
-    <p>API Response</p>
+    <div>
+        <p class="text-left">API Response</p>
+    </div>
 </template>
 
 <script>

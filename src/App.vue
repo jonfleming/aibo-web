@@ -1,12 +1,21 @@
 <template>
-  <div>
-    <aiboimage/>
-    <aiboaction/>
-    <aibotarget/>
-    <aiboresponse/>
-    <aibolog/>
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+    <div class="container">
+        <div class="row text-center">
+            <aiboimage/>
+        </div>
+        <form class="form-horizontal row p-2">
+            <div class="form-group col-sm-6">
+                <aiboaction/>
+                <aibotarget/>
+            </div>
+            <div class="form-group col-sm-6">
+                <aiboresponse/>
+            </div>
+            <div class="form-group col-sm-12">
+              <aibolog/>
+            </div>
+        </form>
+    </div>
 </template>
 
 <script>
@@ -37,4 +46,5 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
+
 </style>

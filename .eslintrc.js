@@ -29,5 +29,7 @@ module.exports = {
   ],
   rules: {
     'linebreak-style': 0,
+    'object-property-newline': 0,
+    'object-curly-newline': 0,
   },
 };
