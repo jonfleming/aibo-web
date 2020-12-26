@@ -1,6 +1,7 @@
 <template>
     <div>
-        <p class="text-left">API Response</p>
+        <p class="text-left"><b>API Response</b>s</p>
+        <textarea class="ml-2" rows="20"></textarea>
     </div>
 </template>
 
@@ -9,3 +10,8 @@ export default {
   name: 'aiboresponse',
 };
 </script>
+<style scoped>
+textarea {
+  width: 100%;
+}
+</style>

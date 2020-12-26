@@ -6,7 +6,7 @@ const data = [
   },
   { action: 'approach_person', text: 'Approach Person', arguments:
     [
-      { name: 'DistanceFromTarget', text: 'Distance from Target', values: 'numeric', min: 0.4, max: 2.0, units: 'meters' },
+      { name: 'DistanceFromTarget', text: 'Distance from Target', input: 0.4, min: 0.4, max: 2.0, units: 'meters' },
     ],
   },
   { action: 'change_posture', text: 'Change Posture', arguments:
@@ -33,12 +33,12 @@ const data = [
   },
   { action: 'chase_person', text: 'Chase Person', arguments:
     [
-      { name: 'ChasingDurationMsec', text: 'Chasing Duration', values: 'numeric', min: 0, max: 360000, units: 'milliseconds' },
+      { name: 'ChasingDurationMsec', text: 'Chasing Duration', input: 0, min: 0, max: 360000, units: 'milliseconds' },
     ],
   },
   { action: 'explore', text: 'Explore', arguments:
     [
-      { name: 'Duration', text: 'Duration', values: 'numeric', min: 0, max: 260, units: 'seconds' },
+      { name: 'Duration', text: 'Duration', input: 0, min: 0, max: 260, units: 'seconds' },
     ],
   },
   { action: 'find_object', text: 'Find Object', arguments:
@@ -50,7 +50,7 @@ const data = [
   { action: 'get_close_to_object', text: 'Get Close to Object', arguments:
     [
       { name: 'TargetType', text: 'Target Type', values: ['aibone', 'dice', 'pinkball'] },
-      { name: 'Distance', text: 'Distance', values: 'numeric', min: 0.1, max: 0.3, units: 'meters' },
+      { name: 'Distance', text: 'Distance', input: 0.1, min: 0.1, max: 0.3, units: 'meters' },
     ],
   },
   { action: 'kick_object', text: 'Kick Object', arguments:
@@ -62,35 +62,35 @@ const data = [
   { action: 'move_along_circle', text: 'Move Along Circle', arguments:
     [
       { name: 'WalkSpeed', text: 'Walk Speed', values: [0, 1, 2] },
-      { name: 'Radius', text: 'Radius', values: 'numeric', min: 0.5, max: 3.0, units: 'meters' },
-      { name: 'MovingAngle', text: 'Angle', values: 'numeric', min: 0, max: 1080, units: 'degrees' },
+      { name: 'Radius', text: 'Radius', input: 0.5, min: 0.5, max: 3.0, units: 'meters' },
+      { name: 'MovingAngle', text: 'Angle', input: 0, min: 0, max: 1080, units: 'degrees' },
       { name: 'Direction', text: 'Direction', values: ['left', 'right'] },
     ],
   },
   { action: 'move_direction', text: 'Move in Direction', arguments:
     [
       { name: 'WalkSpeed', text: 'Walk Speed', values: [0, 1, 2] },
-      { name: 'TargetDistance', text: 'Target Distance', values: 'numeric', min: 0.5, max: 6.0, units: 'meters' },
-      { name: 'TargetAngle', text: 'Angle', values: 'numeric', min: -180, max: 180, units: 'degrees' },
+      { name: 'TargetDistance', text: 'Target Distance', input: 0.5, min: 0.5, max: 6.0, units: 'meters' },
+      { name: 'TargetAngle', text: 'Angle', input: 0, min: -180, max: 180, units: 'degrees' },
     ],
   },
   { action: 'move_forward', text: 'Move Forward', arguments:
     [
       { name: 'WalkSpeed', text: 'Walk Speed', values: [0, 1, 2] },
-      { name: 'WalkDistance', text: 'Walk Distance', values: 'numeric', min: -6, max: 6, units: 'meters' },
+      { name: 'WalkDistance', text: 'Walk Distance', input: 0, min: -6, max: 6, units: 'meters' },
     ],
   },
   { action: 'move_head', text: 'Move Head', arguments:
     [
-      { name: 'Azimuth', text: 'Azimuth', values: 'numeric', min: -80, max: 80, units: 'degrees' },
-      { name: 'Elevation', text: 'Elevation', values: 'numeric', min: -40, max: 40, units: 'degrees' },
-      { name: 'Velocity', text: 'Velocity', values: 'numeric', min: 10, max: 80, units: 'degrees/second' },
+      { name: 'Azimuth', text: 'Azimuth', input: 0, min: -80, max: 80, units: 'degrees' },
+      { name: 'Elevation', text: 'Elevation', input: 0, min: -40, max: 40, units: 'degrees' },
+      { name: 'Velocity', text: 'Velocity', input: 10, min: 10, max: 80, units: 'degrees/second' },
     ],
   },
   { action: 'move_sideways', text: 'Move Forward', arguments:
     [
       { name: 'WalkSpeed', text: 'Walk Speed', values: [0, 1, 2] },
-      { name: 'WalkDistance', text: 'Walk Distance', values: 'numeric', min: -6, max: 6, units: 'meters' },
+      { name: 'WalkDistance', text: 'Walk Distance', input: 0, min: -6, max: 6, units: 'meters' },
     ],
   },
   { action: 'move_to_position', text: 'Move to Position', arguments:
@@ -194,13 +194,13 @@ const data = [
   },
   { action: 'Stay', text: 'Stay', arguments:
     [
-      { name: 'Duration`', text: 'Duration', values: 'numeric', min: 0, max: 360, units: 'seconds' },
+      { name: 'Duration`', text: 'Duration', input: 0, min: 0, max: 360, units: 'seconds' },
     ],
   },
   { action: 'turn_around', text: 'Turn Around', arguments:
     [
       { name: 'TurnSpeed', text: 'Turn Speed', values: [0, 1, 2] },
-      { name: 'TurnAngle', text: 'Angle', values: 'numeric', min: -180, max: 180, units: 'degrees' },
+      { name: 'TurnAngle', text: 'Angle', input: 0, min: -180, max: 180, units: 'degrees' },
     ],
   },
 ];

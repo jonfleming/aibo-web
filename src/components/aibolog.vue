@@ -1,6 +1,6 @@
 <template>
     <div>
-        <p class="text-left">Log</p>
+        <p class="text-left"><b>Log</b></p>
         <textarea class="form-control" rows="10"></textarea>
     </div>
 </template>
